@@ -8,7 +8,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
-@CacheConfig(cacheNames = {"directory", "instruments"})
+@CacheConfig(cacheNames = {"instruments"})
 public class MusicServiceImpl implements MusicService {
 
     private static Logger log = LoggerFactory.getLogger(MusicServiceImpl.class);
