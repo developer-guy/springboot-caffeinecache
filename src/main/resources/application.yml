@@ -1,0 +1,12 @@
+spring:
+ cache:
+   cache-names: instruments, directory
+   caffeine:
+     spec: maximumSize=500, expireAfterAccess=30s
+
+logging:
+  pattern:
+    console: "%-5level - %msg%n"
+  level:
+    - error
+    - com.bthnapaydin.caffeine=trace
