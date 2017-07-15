@@ -3,12 +3,14 @@ package com.bthnapaydin.caffeine.impl;
 import com.bthnapaydin.caffeine.service.MusicService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
 @CacheConfig(cacheNames = {"instruments"})
+@Qualifier("musicServiceImpl1")
 public class MusicServiceImpl implements MusicService {
 
     private static Logger log = LoggerFactory.getLogger(MusicServiceImpl.class);
