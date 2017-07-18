@@ -21,7 +21,7 @@ public class CaffeinecacheApplicationTests {
     private final Logger logger = LoggerFactory.getLogger(CaffeinecacheApplicationTests.class);
 
     @Autowired
-    @Qualifier("musicServiceImpl1")
+    @Qualifier("musicServiceImpl")
     private MusicService musicService;
 
     @Test

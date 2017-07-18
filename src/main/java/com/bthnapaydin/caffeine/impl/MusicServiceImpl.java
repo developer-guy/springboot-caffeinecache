@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @CacheConfig(cacheNames = {"instruments"})
-@Qualifier("musicServiceImpl1")
+@Qualifier("musicServiceImpl")
 public class MusicServiceImpl implements MusicService {
 
     private static Logger log = LoggerFactory.getLogger(MusicServiceImpl.class);
